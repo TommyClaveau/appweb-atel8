@@ -24,5 +24,5 @@ export const thisMonth: Post = {
   created: DateTime.now().minus({ weeks: 3 }).toISO(),
 };
 export interface TimelinePost extends Omit<Post, "created"> {
-  created: DateTime;
+  created: luxon.DateTime;
 }
