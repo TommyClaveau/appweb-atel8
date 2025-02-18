@@ -1,4 +1,5 @@
-import { DateTime } from "luxon";
+import * as luxon from "luxon";
+const { DateTime } = luxon;
 
 export interface Post {
   id: string;

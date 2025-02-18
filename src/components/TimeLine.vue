@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { type TimelinePost, today, thisWeek, thisMonth } from "../posts";
-import { DateTime } from "luxon";
+import * as luxon from "luxon";
+const { DateTime } = luxon;
 import { ref, computed } from "vue";
 import TimelineItem from "./TimelineItem.vue";
 const periods = ["Aujourd'hui", "Cette semaine", "Ce mois"] as const;
